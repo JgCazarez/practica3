@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0A0C1B;
+    color: aliceblue;
+}
+.container{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 18rem;
+    width: 40rem;
+    margin-top: 8rem;
+    border: solid 1px black;
+    background-color: #fff;
+}
+.sideA{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #1C1839;
+}
+.sideB{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    background-image: url('images/image-header-desktop.jpg');
+     background-color: hsl(277, 64%, 61%);
+  background-blend-mode: multiply;
+    background-size: cover;
+    opacity: 100%;
+    
+}
+/* .fondo{
+    position: relative;
+    display: flex;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%);
+    z-index: 1;
+    opacity: 100%;
+} */
+.title{
+    position: relative;
+    display: flex;
+    gap: 5px;
+    font-weight: 600;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+.remark{
+    display: inline;
+    color: purple;
+    font-weight: bold;
+}
+.text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify center;
+    padding: 15px;
+    opacity: 60%;
+}
+.footer{
+display: flex;
+
+}
+.footer-title{
+    font-weight: 800;
+    color: white;
+    flex-wrap: wrap;
+
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    gap: 0.3rem;
+    width: 90px;
+    height: 90px;
+}
+.footer-text{
+    display: flex;
+    position: relative;
+    font-size: 0.7rem;
+    opacity: 0.3;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@media (max-width: 500px){
+    .container{
+        height: auto;
+        width: 90%;
+        flex-direction: column-reverse;
+
+    }
+    .title{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .title .remark{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    ¿.sideB{
+        width: 100%;
+    }
+    .sideA{
+        width: 100%;
+    }
+
+    .sideB{
+        background-image: url('images/image-header-mobile.jpg');
+        height: 200px;
+        width: 100%;
+       /*  background-position: center;
+        background-repeat: no-repeat; */
+        background-size: cover;
+    }
+}
